@@ -44,14 +44,21 @@ var AssignmentShow = React.createClass({
   },
   render: function () {
     var hidden = this.props.children ? " invisible" : ""
+    var assignmentActive = this.props.children ? "" : "active"
+    var submissionActive = this.props.children ? "active" : ""
+    var dueAt = new Date(this.state.assignment.due_at)
     return (
       <div className="assignment-tabs">
-        <div className="tabs">
-          <div onClick={this.assignmentClick}>Assigment</div>
-          <div onClick={this.submissionClick}>Submissions</div>
-        </div>
-        <div className={"assignment-show" + hidden}>
-          {this.state.assignment.description}
+        <ul className="nav nav-tabs">
+          <li onClick={this.assignmentClick} className={assignmentActive}><a href="#">Assignment</a></li>
+          <li onClick={this.submissionClick} className={submissionActive}><a href="#">Submissions</a></li>
+        </ul>
+        <div className={"page-header" + hidden}>
+          <h1>{this.state.assignment.title}
+          <small className="right">due {dueAt.toDateString()}</small>
+          <br/>
+          <small>{this.state.assignment.description}</small>
+          </h1>
         </div>
         <div className="submissions-index">
           {this.props.children}

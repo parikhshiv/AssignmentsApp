@@ -9,20 +9,42 @@ SubmissionIndexItem = React.createClass({
   },
   render: function () {
     var submittedAt = new Date(this.props.submitted_at)
-    hidden = this.state.detailHidden ? "invisible" : ""
+    hidden = this.state.detailHidden ? " invisible" : ""
     return (
-        <div className="">
-          <div className="speech-index-item" onClick={this.onClick}>
-            <h4>{this.props.creator.first_name} {this.props.creator.last_name}</h4>
-            <br/>
-            turned in on {submittedAt.toDateString()}
-            <br/>
-            <img src={this.props.creator.avatars.large}/>
-          </div>
+      <li className="media" onClick={this.onClick}>
+        <div className="media-left">
+          <a href="#">
+            <img className="media-object" src={this.props.creator.avatars.large} alt="..."/>
+          </a>
+        </div>
+        <div className="media-body">
+          <h4 className="media-heading">{this.props.creator.first_name} {this.props.creator.last_name}</h4>
+          <div className="pull-right">turned in on {submittedAt.toDateString()}</div>
+          <br/>
+          <br/>
           <div className={hidden}>
             {this.props.content}
           </div>
         </div>
+      </li>
     )
   }
 })
+
+// <div className="container-fluid submission-index-item">
+//   <div className="media" onClick={this.onClick}>
+//     <div className="media-left">
+//       <a href="#">
+//         <img className="media-object" src={this.props.creator.avatars.large} alt=""/>
+//       </a>
+//     </div>
+//     <div className="media-body">
+//       <h4 className="media-heading">{this.props.creator.first_name} {this.props.creator.last_name}</h4>
+//       turned in on {submittedAt.toDateString()}
+//       <div className={hidden}>
+//         {this.props.content}
+//       </div>
+//     </div>
+//     <br/>
+//   </div>
+// </div>

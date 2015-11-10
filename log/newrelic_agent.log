@@ -1,0 +1,66 @@
+# Logfile created on 2015-11-10 00:20:17 -0600 by logger.rb/44203
+[11/10/15 00:20:17 -0600 Shiv-Parikhs-MacBook.local (844)] INFO : Starting the New Relic agent in "development" environment.
+[11/10/15 00:20:17 -0600 Shiv-Parikhs-MacBook.local (844)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/10/15 00:20:17 -0600 Shiv-Parikhs-MacBook.local (844)] WARN : No configuration file found. Working directory = /Users/shivparikh/Desktop/EdmodoApp
+[11/10/15 00:20:17 -0600 Shiv-Parikhs-MacBook.local (844)] WARN : Looked in these locations (based on defaults): /Users/shivparikh/Desktop/EdmodoApp/config/newrelic.yml, /Users/shivparikh/Desktop/EdmodoApp/newrelic.yml, /Users/shivparikh/Desktop/EdmodoApp/config/newrelic.yml, /Users/shivparikh/Desktop/EdmodoApp/newrelic.yml, /Users/shivparikh/.newrelic/newrelic.yml, /Users/shivparikh/newrelic.yml
+[11/10/15 00:20:17 -0600 Shiv-Parikhs-MacBook.local (844)] INFO : Environment: development
+[11/10/15 00:20:17 -0600 Shiv-Parikhs-MacBook.local (844)] INFO : Dispatcher: webrick
+[11/10/15 00:20:17 -0600 Shiv-Parikhs-MacBook.local (844)] INFO : Application: development
+[11/10/15 00:20:17 -0600 Shiv-Parikhs-MacBook.local (844)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[11/10/15 00:20:18 -0600 Shiv-Parikhs-MacBook.local (844)] INFO : Installing ActiveJob instrumentation
+[11/10/15 00:20:18 -0600 Shiv-Parikhs-MacBook.local (844)] INFO : Installing Net instrumentation
+[11/10/15 00:20:18 -0600 Shiv-Parikhs-MacBook.local (844)] INFO : Installing deferred Rack instrumentation
+[11/10/15 00:20:18 -0600 Shiv-Parikhs-MacBook.local (844)] INFO : Installing Rack::Builder middleware instrumentation
+[11/10/15 00:20:18 -0600 Shiv-Parikhs-MacBook.local (844)] INFO : Installing Rails 3+ middleware instrumentation
+[11/10/15 00:20:18 -0600 Shiv-Parikhs-MacBook.local (844)] INFO : Installing Redis Instrumentation
+[11/10/15 00:20:18 -0600 Shiv-Parikhs-MacBook.local (844)] INFO : Installing Rails 4 Controller instrumentation
+[11/10/15 00:20:18 -0600 Shiv-Parikhs-MacBook.local (844)] INFO : Installing Rails 4 view instrumentation
+[11/10/15 00:20:18 -0600 Shiv-Parikhs-MacBook.local (844)] INFO : Installing Rails 4 Error instrumentation
+[11/10/15 00:20:18 -0600 Shiv-Parikhs-MacBook.local (844)] INFO : Finished instrumentation
+[11/10/15 00:20:20 -0600 Shiv-Parikhs-MacBook.local (844)] INFO : Doing deferred dependency-detection before Rack startup
+[11/10/15 00:20:22 -0600 Shiv-Parikhs-MacBook.local (844)] ERROR : Invalid license key, please contact support@newrelic.com
+[11/10/15 00:20:22 -0600 Shiv-Parikhs-MacBook.local (844)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[11/10/15 00:23:26 -0600 Shiv-Parikhs-MacBook.local (844)] INFO : Starting Agent shutdown
+[11/10/15 00:23:43 -0600 Shiv-Parikhs-MacBook.local (913)] INFO : Starting the New Relic agent in "development" environment.
+[11/10/15 00:23:43 -0600 Shiv-Parikhs-MacBook.local (913)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/10/15 00:23:43 -0600 Shiv-Parikhs-MacBook.local (913)] WARN : No configuration file found. Working directory = /Users/shivparikh/Desktop/EdmodoApp
+[11/10/15 00:23:43 -0600 Shiv-Parikhs-MacBook.local (913)] WARN : Looked in these locations (based on defaults): /Users/shivparikh/Desktop/EdmodoApp/config/newrelic.yml, /Users/shivparikh/Desktop/EdmodoApp/newrelic.yml, /Users/shivparikh/Desktop/EdmodoApp/config/newrelic.yml, /Users/shivparikh/Desktop/EdmodoApp/newrelic.yml, /Users/shivparikh/.newrelic/newrelic.yml, /Users/shivparikh/newrelic.yml
+[11/10/15 00:23:43 -0600 Shiv-Parikhs-MacBook.local (913)] INFO : Environment: development
+[11/10/15 00:23:43 -0600 Shiv-Parikhs-MacBook.local (913)] INFO : Dispatcher: webrick
+[11/10/15 00:23:43 -0600 Shiv-Parikhs-MacBook.local (913)] INFO : Application: development
+[11/10/15 00:23:43 -0600 Shiv-Parikhs-MacBook.local (913)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[11/10/15 00:23:43 -0600 Shiv-Parikhs-MacBook.local (913)] INFO : Installing ActiveJob instrumentation
+[11/10/15 00:23:43 -0600 Shiv-Parikhs-MacBook.local (913)] INFO : Installing Net instrumentation
+[11/10/15 00:23:43 -0600 Shiv-Parikhs-MacBook.local (913)] INFO : Installing deferred Rack instrumentation
+[11/10/15 00:23:43 -0600 Shiv-Parikhs-MacBook.local (913)] INFO : Installing Rack::Builder middleware instrumentation
+[11/10/15 00:23:43 -0600 Shiv-Parikhs-MacBook.local (913)] INFO : Installing Rails 3+ middleware instrumentation
+[11/10/15 00:23:43 -0600 Shiv-Parikhs-MacBook.local (913)] INFO : Installing Redis Instrumentation
+[11/10/15 00:23:43 -0600 Shiv-Parikhs-MacBook.local (913)] INFO : Installing Rails 4 Controller instrumentation
+[11/10/15 00:23:44 -0600 Shiv-Parikhs-MacBook.local (913)] INFO : Installing Rails 4 view instrumentation
+[11/10/15 00:23:44 -0600 Shiv-Parikhs-MacBook.local (913)] INFO : Installing Rails 4 Error instrumentation
+[11/10/15 00:23:44 -0600 Shiv-Parikhs-MacBook.local (913)] INFO : Finished instrumentation
+[11/10/15 00:23:46 -0600 Shiv-Parikhs-MacBook.local (913)] INFO : Doing deferred dependency-detection before Rack startup
+[11/10/15 00:23:50 -0600 Shiv-Parikhs-MacBook.local (913)] ERROR : Invalid license key, please contact support@newrelic.com
+[11/10/15 00:23:50 -0600 Shiv-Parikhs-MacBook.local (913)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[11/10/15 00:24:43 -0600 Shiv-Parikhs-MacBook.local (913)] INFO : Starting Agent shutdown
+[11/10/15 00:25:02 -0600 Shiv-Parikhs-MacBook.local (956)] INFO : Starting the New Relic agent in "development" environment.
+[11/10/15 00:25:02 -0600 Shiv-Parikhs-MacBook.local (956)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/10/15 00:25:02 -0600 Shiv-Parikhs-MacBook.local (956)] WARN : No configuration file found. Working directory = /Users/shivparikh/Desktop/EdmodoApp
+[11/10/15 00:25:02 -0600 Shiv-Parikhs-MacBook.local (956)] WARN : Looked in these locations (based on defaults): /Users/shivparikh/Desktop/EdmodoApp/config/newrelic.yml, /Users/shivparikh/Desktop/EdmodoApp/newrelic.yml, /Users/shivparikh/Desktop/EdmodoApp/config/newrelic.yml, /Users/shivparikh/Desktop/EdmodoApp/newrelic.yml, /Users/shivparikh/.newrelic/newrelic.yml, /Users/shivparikh/newrelic.yml
+[11/10/15 00:25:02 -0600 Shiv-Parikhs-MacBook.local (956)] INFO : Environment: development
+[11/10/15 00:25:02 -0600 Shiv-Parikhs-MacBook.local (956)] INFO : Dispatcher: webrick
+[11/10/15 00:25:02 -0600 Shiv-Parikhs-MacBook.local (956)] INFO : Application: development
+[11/10/15 00:25:02 -0600 Shiv-Parikhs-MacBook.local (956)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[11/10/15 00:25:03 -0600 Shiv-Parikhs-MacBook.local (956)] INFO : Installing ActiveJob instrumentation
+[11/10/15 00:25:03 -0600 Shiv-Parikhs-MacBook.local (956)] INFO : Installing Net instrumentation
+[11/10/15 00:25:03 -0600 Shiv-Parikhs-MacBook.local (956)] INFO : Installing deferred Rack instrumentation
+[11/10/15 00:25:03 -0600 Shiv-Parikhs-MacBook.local (956)] INFO : Installing Rack::Builder middleware instrumentation
+[11/10/15 00:25:03 -0600 Shiv-Parikhs-MacBook.local (956)] INFO : Installing Rails 3+ middleware instrumentation
+[11/10/15 00:25:03 -0600 Shiv-Parikhs-MacBook.local (956)] INFO : Installing Redis Instrumentation
+[11/10/15 00:25:03 -0600 Shiv-Parikhs-MacBook.local (956)] INFO : Installing Rails 4 Controller instrumentation
+[11/10/15 00:25:03 -0600 Shiv-Parikhs-MacBook.local (956)] INFO : Installing Rails 4 view instrumentation
+[11/10/15 00:25:03 -0600 Shiv-Parikhs-MacBook.local (956)] INFO : Installing Rails 4 Error instrumentation
+[11/10/15 00:25:03 -0600 Shiv-Parikhs-MacBook.local (956)] INFO : Finished instrumentation
+[11/10/15 00:25:05 -0600 Shiv-Parikhs-MacBook.local (956)] INFO : Doing deferred dependency-detection before Rack startup
+[11/10/15 00:25:12 -0600 Shiv-Parikhs-MacBook.local (956)] ERROR : Invalid license key, please contact support@newrelic.com
+[11/10/15 00:25:12 -0600 Shiv-Parikhs-MacBook.local (956)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.

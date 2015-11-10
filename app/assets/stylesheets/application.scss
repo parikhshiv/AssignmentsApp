@@ -17,15 +17,87 @@
  *= require_self
  */
 
-div.assignment-tabs {
-  // float: right;
+div.navbar-header {
+  //  font-size: 40px;
+  float: right;
+ }
+
+ a.active {
+   background-color: rgba(221, 221, 221, 0.34);
+ }
+
+nav.navbar {
+  // background-color: #D8AADB;
 }
+
+small.right {
+  float: right;
+}
+
+div.page, div.home{
+  padding: 0px;
+}
+
+ul.media-list {
+  overflow: scroll;
+  max-height: 500px;
+}
+
+div.media-body > h4 {
+  width: 50%;
+  float: left;
+}
+
+div.index {
+  width: 39%;
+  text-align: center;
+  float: left;
+  margin: 0px;
+  margin-left: 1%;
+}
+
+div.assignment {
+  float: right;
+  width: 58%;
+  padding-right: 3%;
+}
+
+div.submissions-index {
+  margin-top: 1%;
+}
+
+div.submission-index-item {
+  max-height: 125px;
+  padding: 3%;
+  border: 2px solid gray;
+  border-bottom: 1px solid gray;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+div.submission-index-item:hover {
+  background-color: gray;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+div.submission-index-item:last-child {
+  border-bottom: 2px solid gray;
+}
+
+div.media-left {
+  width: 20%;
+}
+
 html {
   height: 100%;
 }
 
 body {
-  font-family: 'Fira Sans';
+  // font-family: 'Fira Sans';
   // color: white;
   // background-color: black;
   margin: 0px;
@@ -36,10 +108,6 @@ body {
 div.about-page {
   width: 90%;
   margin: auto;
-}
-
-div.index {
-  margin: 0px 100px;
 }
 
 div.song-index {
@@ -262,12 +330,7 @@ input.edit:hover {
 }
 
 div.invisible {
-  float: right;
-  width: 34%;
-  padding: 3%;
-  background-color: black;
-  margin-right: 2%;
-  border-left: none;
+  display: none;
 }
 
 input.cancel:hover {

@@ -15,11 +15,11 @@ var SubmissionIndex = React.createClass({
   },
   render: function () {
     var dueAt = new Date(this.props.due_at)
-    return <div className="submissions-index">
+    return <ul className="media-list">
             {this.state.submissions.map(function (submission) {
               return <SubmissionIndexItem
               key={submission.id} {...submission}/>
             })}
-          </div>
+          </ul>
   }
 })
