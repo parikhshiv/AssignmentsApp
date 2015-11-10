@@ -1,0 +1,157 @@
+// Place all the styles related to the api::speeches controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.speech-form {
+  width: 49%;
+  margin: -3% auto 3% auto;
+}
+
+div.speech-form > h3 {
+  font-size: 34px;
+  margin-bottom: 0%;
+}
+
+div.speech-image-container {
+  float: right;
+  width: 33%;
+  height: 760px;
+  background-size: cover;
+  background-position: center center;
+  opacity: .2;
+  margin-right: 2%;
+}
+
+div.image-hidden {
+  display: none;
+}
+
+div.speech-index-item {
+  border: 1px solid black;
+  padding: 10px;
+  max-width: 445px;
+  margin: 10px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+  text-align: center;
+  overflow: hidden;
+}
+
+div.speech-bottom-index-item {
+  border: 1px solid white;
+  padding: 10px;
+  width: 28%;
+  min-height: 85px;
+  max-height: 85px;
+  margin: 1% 1%;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+  float: left;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  vertical-align: -webkit-baseline-middle;
+  overflow: hidden;
+}
+
+div.speech-bottom-index-item > span, div.speech-bottom-index-item > strong{
+  margin-top: 50%;
+  vertical-align: middle;
+  vertical-align: -webkit-baseline-middle;
+}
+
+img.bottom-speech-img {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 75%;
+}
+
+div.speech-index-item:hover, div.speech-bottom-index-item:hover {
+  background-color: #565656;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+div.speech-container{
+  width: 50%;
+  float: left;
+  margin-left: 10%;
+  border-left: 1px solid white;
+  padding-left: 3%;
+}
+
+div.speech-container > h5 {
+  margin-bottom: 4%;
+}
+
+div.speech-search {
+  float:left;
+  margin-top: 0.5%;
+  width: 20%;
+  margin-left: 1%;
+  max-height: 44px;
+}
+
+div.speech-search > input {
+  color: black;
+  background-color: white;
+  height: 30px;
+  padding: 0.5%;
+  font-family: 'Fira Sans';
+  font-weight: 200;
+  font-size: 18px;
+  width: 100%;
+}
+
+div.speech-search > input::-webkit-input-placeholder {
+   text-align: center;
+   color: black;
+}
+
+div.speech-search > input:hover {
+  background-color: white;
+  cursor: auto;
+}
+
+ul.search-results {
+  position: absolute;
+  padding: 0px;
+  margin: 0px;
+  z-index: 1;
+}
+
+div.search-result-item {
+  background-color: #D4D4D4;
+  border: 1px solid #232323;
+  padding: 3%;
+  -webkit-transition: all .1s;
+  -moz-transition: all .1s;
+  transition: all .1s;
+}
+
+div.search-result-item:hover {
+  background-color: white;
+  cursor: pointer;
+  -webkit-transition: all .1s;
+  -moz-transition: all .1s;
+  transition: all .1s;
+}
+
+div.index-bottom {
+  float: left;
+  width: 68%;
+  height: 482px;
+  margin: 1% 0%;
+}
+
+div.song-index-bottom {
+  width: 100%;
+  margin: 0px;
+  float: left;
+  column-fill: auto;
+}

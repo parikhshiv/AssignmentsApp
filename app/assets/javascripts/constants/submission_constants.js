@@ -1,0 +1,3 @@
+SubmissionConstants = {
+  SUBMISSIONS_RECIEVED: "SUBMISSIONS_RECIEVED"
+};

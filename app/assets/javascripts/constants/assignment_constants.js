@@ -1,0 +1,3 @@
+AssignmentConstants = {
+  ASSIGNMENTS_RECIEVED: "ASSIGNMENTS_RECIEVED"
+};
