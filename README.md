@@ -1,6 +1,6 @@
-### SpeechGenius
+### AssignmentsApp
 
-[Live Link](http://speechgenius.xyz)
+<!-- [Live Link](http://speechgenius.xyz)
 
 ## Summary
 
@@ -81,4 +81,4 @@ SpeechGenius is a clone of Rap Genius for speech annotation built on Ruby on Rai
  - Create, read and delete comments on annotations
  - Vote on speeches, annotations and comments - comments and new speeches should be ordered by total votes
  - Search for speeches
- - Guest login
+ - Guest login -->
