@@ -57,9 +57,10 @@
     background-color: white;
     box-shadow: 5px 5px 5px;
     padding: 2%;
-    width: 30%;
+    width: 45%;
     margin: 3% auto 3% auto;
     z-index: 9;
+    max-height: 85%;
     // position: fixed;
  }
 
@@ -347,6 +348,7 @@ textarea {
   padding: 1%;
   border: 1px solid #A5A2A2;
   color: #EAE9E9;
+  max-height: 270px
 }
 
 input {

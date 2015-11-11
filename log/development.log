@@ -40076,3 +40076,387 @@ Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a
 
 
 Started GET "/assets/components/submissions/submission_index.self-290697bb8e4c5c1be9986766af43583b4cd505df792a91e76ac2c2f6530fd107.js?body=1" for ::1 at 2015-11-10 22:25:10 -0600
+
+
+Started GET "/assets/api/speeches.css" for ::1 at 2015-11-10 22:36:30 -0600
+
+
+Started GET "/" for ::1 at 2015-11-10 22:39:27 -0600
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html within layouts/application (1.2ms)
+Completed 200 OK in 562ms (Views: 557.0ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/development-with-addons/react.self-eb8c71fecbd80164b57078dcf4c66c91c12c9c84b59938c485aea8b6ae3538c1.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/actions/api_actions.self-a6a29c6a4f1f356ab06a6f759b9d39ef1fb559a6fdd66498be556ec2e622a21e.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/assignment_holder.self-316701c5595609ea232d8c385dfc275e644bdaa6a84ec45603aac6d35c383607.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/components/assignments/assignment_index.self-7616a8a9db0000d351a06f4263f8ffbaa738c610cc1152a397b25e61545f3e20.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/components/about_page.self-e3a96eadd46b8c0e78a6b642a242b0d0f7eb3790335dd874bcf5aa3275d57c22.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/components/assignments/assignment_index_item.self-7c25905e9e4b9b46b2b7d5ccaf63c1cac769d861577ee1d49713cb78f380b839.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/application.self-5f1f3588dfeced9106b9f34983e9abc1ec3db566237dae0072d0ed85fd18162d.css?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/components/assignments/assignment_show.self-ce2eca3c312551d8597596701cd2bdab9dfd0014d1ebb2549ffd381253c6319e.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/components/assignments/speech_form.self-887300ee174884123fe7f24e05895aab4adf6db44ca762afa7ef9ce6729d0d7d.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/components/headerAbout.self-0114c4a55734bf6fe0468915cb03c754c84cb23ffdf3c803308e1962487091e2.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/components/assignments/assignment_form.self-9e09fdccba1c3acb9c65d8ce15752e1bfd8d9de45db8df6afd51a18a4199a0e4.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/components/navbar.self-7902b981244bd90ee9c9b6e32cf8f59ecb33b6a99f66f0919cea2732b6c1ccc3.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/components/submissions/submission_index.self-290697bb8e4c5c1be9986766af43583b4cd505df792a91e76ac2c2f6530fd107.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/components/submissions/submission_index_item.self-13fc05f55df003aa5bbdfac0b97f07927ca2f59ae9f1522b74b60e2e286e06de.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/api/speeches.css" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/constants/submission_constants.self-0c40e9f6b665141aae18049262bebc714bc32c0112105fc80b67aa395746ffa0.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/constants/assignment_constants.self-bf51f924afb661d9edaa8f1d4b1ec99b6ad3c0b1c7421e6b587803f44c26a1ef.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/dispatcher/dispatcher.self-27d32ce23a523f84ac3386e725bc78d6b63ecc0427feb3361640e6233142ae34.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/stores/assignment.self-1030045ede3c1b877b003a110f699e00b22bc3ef8910075e1d45bde925a344e7.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/util/api_util.self-dc970a0df3da01172ae47991e9e6bde643fc07f0b5272a35d73f74cfd70c892c.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/assets/stores/submission.self-6097c1925b630d6e853351e24e2e1709747034f2886bc9f246cebefca2e27086.js?body=1" for ::1 at 2015-11-10 22:39:28 -0600
+
+
+Started GET "/" for ::1 at 2015-11-10 22:42:58 -0600
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html within layouts/application (1.4ms)
+Completed 200 OK in 6010ms (Views: 6004.4ms)
+
+
+Started GET "/assets/application.self-1838983bf2e31c6ea9211543b947399635f865ea5f3c1ac46516dffdcf7bb93f.css?body=1" for ::1 at 2015-11-10 22:43:04 -0600
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-10 22:43:04 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-10 22:43:04 -0600
+
+
+Started GET "/assets/development-with-addons/react.self-eb8c71fecbd80164b57078dcf4c66c91c12c9c84b59938c485aea8b6ae3538c1.js?body=1" for ::1 at 2015-11-10 22:43:04 -0600
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-11-10 22:43:04 -0600
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-11-10 22:43:04 -0600
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-11-10 22:43:05 -0600
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-10 22:43:05 -0600
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for ::1 at 2015-11-10 22:43:05 -0600
+
+
+Started GET "/assets/actions/api_actions.self-a6a29c6a4f1f356ab06a6f759b9d39ef1fb559a6fdd66498be556ec2e622a21e.js?body=1" for ::1 at 2015-11-10 22:43:05 -0600
+
+
+Started GET "/assets/assignment_holder.self-316701c5595609ea232d8c385dfc275e644bdaa6a84ec45603aac6d35c383607.js?body=1" for ::1 at 2015-11-10 22:43:05 -0600
+
+
+Started GET "/assets/api/speeches.css" for ::1 at 2015-11-10 22:43:05 -0600
+
+
+Started GET "/assets/components/assignments/assignment_form.self-9e09fdccba1c3acb9c65d8ce15752e1bfd8d9de45db8df6afd51a18a4199a0e4.js?body=1" for 127.0.0.1 at 2015-11-10 22:43:05 -0600
+
+
+Started GET "/assets/components/about_page.self-e3a96eadd46b8c0e78a6b642a242b0d0f7eb3790335dd874bcf5aa3275d57c22.js?body=1" for ::1 at 2015-11-10 22:43:05 -0600
+
+
+Started GET "/assets/components/assignments/assignment_index.self-7616a8a9db0000d351a06f4263f8ffbaa738c610cc1152a397b25e61545f3e20.js?body=1" for ::1 at 2015-11-10 22:43:05 -0600
+
+
+Started GET "/assets/components/assignments/assignment_index_item.self-7c25905e9e4b9b46b2b7d5ccaf63c1cac769d861577ee1d49713cb78f380b839.js?body=1" for ::1 at 2015-11-10 22:43:05 -0600
+
+
+Started GET "/assets/components/assignments/speech_form.self-887300ee174884123fe7f24e05895aab4adf6db44ca762afa7ef9ce6729d0d7d.js?body=1" for 127.0.0.1 at 2015-11-10 22:43:05 -0600
+
+
+Started GET "/assets/components/headerAbout.self-0114c4a55734bf6fe0468915cb03c754c84cb23ffdf3c803308e1962487091e2.js?body=1" for ::1 at 2015-11-10 22:43:05 -0600
+
+
+Started GET "/assets/components/assignments/assignment_show.self-ce2eca3c312551d8597596701cd2bdab9dfd0014d1ebb2549ffd381253c6319e.js?body=1" for ::1 at 2015-11-10 22:43:05 -0600
+
+
+Started GET "/assets/components/navbar.self-7902b981244bd90ee9c9b6e32cf8f59ecb33b6a99f66f0919cea2732b6c1ccc3.js?body=1" for ::1 at 2015-11-10 22:43:05 -0600
+
+
+Started GET "/assets/components/submissions/submission_index.self-290697bb8e4c5c1be9986766af43583b4cd505df792a91e76ac2c2f6530fd107.js?body=1" for ::1 at 2015-11-10 22:43:05 -0600
+
+
+Started GET "/assets/components/submissions/submission_index_item.self-13fc05f55df003aa5bbdfac0b97f07927ca2f59ae9f1522b74b60e2e286e06de.js?body=1" for ::1 at 2015-11-10 22:43:05 -0600
+
+
+Started GET "/assets/constants/submission_constants.self-0c40e9f6b665141aae18049262bebc714bc32c0112105fc80b67aa395746ffa0.js?body=1" for ::1 at 2015-11-10 22:43:05 -0600
+
+
+Started GET "/assets/constants/assignment_constants.self-bf51f924afb661d9edaa8f1d4b1ec99b6ad3c0b1c7421e6b587803f44c26a1ef.js?body=1" for 127.0.0.1 at 2015-11-10 22:43:05 -0600
+
+
+Started GET "/assets/dispatcher/dispatcher.self-27d32ce23a523f84ac3386e725bc78d6b63ecc0427feb3361640e6233142ae34.js?body=1" for ::1 at 2015-11-10 22:43:05 -0600
+
+
+Started GET "/assets/util/api_util.self-dc970a0df3da01172ae47991e9e6bde643fc07f0b5272a35d73f74cfd70c892c.js?body=1" for ::1 at 2015-11-10 22:43:05 -0600
+
+
+Started GET "/assets/stores/assignment.self-1030045ede3c1b877b003a110f699e00b22bc3ef8910075e1d45bde925a344e7.js?body=1" for ::1 at 2015-11-10 22:43:05 -0600
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-10 22:43:05 -0600
+
+
+Started GET "/assets/stores/submission.self-6097c1925b630d6e853351e24e2e1709747034f2886bc9f246cebefca2e27086.js?body=1" for ::1 at 2015-11-10 22:43:05 -0600
+
+
+Started GET "/" for ::1 at 2015-11-10 22:44:15 -0600
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html within layouts/application (0.8ms)
+Completed 200 OK in 4229ms (Views: 4224.0ms)
+
+
+Started GET "/assets/application.self-679f8c27fa7addbafd97134c2a3155567ea911e7b6d25dd620795c9abaa225a8.css?body=1" for ::1 at 2015-11-10 22:44:19 -0600
+
+
+Started GET "/assets/development-with-addons/react.self-eb8c71fecbd80164b57078dcf4c66c91c12c9c84b59938c485aea8b6ae3538c1.js?body=1" for ::1 at 2015-11-10 22:44:19 -0600
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-10 22:44:19 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-10 22:44:19 -0600
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-11-10 22:44:19 -0600
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-11-10 22:44:19 -0600
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-11-10 22:44:20 -0600
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-10 22:44:20 -0600
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for ::1 at 2015-11-10 22:44:20 -0600
+
+
+Started GET "/assets/actions/api_actions.self-a6a29c6a4f1f356ab06a6f759b9d39ef1fb559a6fdd66498be556ec2e622a21e.js?body=1" for ::1 at 2015-11-10 22:44:20 -0600
+
+
+Started GET "/assets/assignment_holder.self-316701c5595609ea232d8c385dfc275e644bdaa6a84ec45603aac6d35c383607.js?body=1" for ::1 at 2015-11-10 22:44:20 -0600
+
+
+Started GET "/assets/components/about_page.self-e3a96eadd46b8c0e78a6b642a242b0d0f7eb3790335dd874bcf5aa3275d57c22.js?body=1" for ::1 at 2015-11-10 22:44:20 -0600
+
+
+Started GET "/assets/api/speeches.css" for ::1 at 2015-11-10 22:44:20 -0600
+
+
+Started GET "/assets/components/assignments/assignment_form.self-9e09fdccba1c3acb9c65d8ce15752e1bfd8d9de45db8df6afd51a18a4199a0e4.js?body=1" for ::1 at 2015-11-10 22:44:20 -0600
+
+
+Started GET "/assets/components/assignments/assignment_index.self-7616a8a9db0000d351a06f4263f8ffbaa738c610cc1152a397b25e61545f3e20.js?body=1" for ::1 at 2015-11-10 22:44:20 -0600
+
+
+Started GET "/assets/components/assignments/assignment_index_item.self-7c25905e9e4b9b46b2b7d5ccaf63c1cac769d861577ee1d49713cb78f380b839.js?body=1" for ::1 at 2015-11-10 22:44:20 -0600
+
+
+Started GET "/assets/components/assignments/assignment_show.self-ce2eca3c312551d8597596701cd2bdab9dfd0014d1ebb2549ffd381253c6319e.js?body=1" for ::1 at 2015-11-10 22:44:20 -0600
+
+
+Started GET "/assets/components/assignments/speech_form.self-887300ee174884123fe7f24e05895aab4adf6db44ca762afa7ef9ce6729d0d7d.js?body=1" for ::1 at 2015-11-10 22:44:20 -0600
+
+
+Started GET "/assets/components/headerAbout.self-0114c4a55734bf6fe0468915cb03c754c84cb23ffdf3c803308e1962487091e2.js?body=1" for ::1 at 2015-11-10 22:44:20 -0600
+
+
+Started GET "/assets/components/navbar.self-7902b981244bd90ee9c9b6e32cf8f59ecb33b6a99f66f0919cea2732b6c1ccc3.js?body=1" for ::1 at 2015-11-10 22:44:20 -0600
+
+
+Started GET "/assets/components/submissions/submission_index.self-290697bb8e4c5c1be9986766af43583b4cd505df792a91e76ac2c2f6530fd107.js?body=1" for ::1 at 2015-11-10 22:44:20 -0600
+
+
+Started GET "/assets/components/submissions/submission_index_item.self-13fc05f55df003aa5bbdfac0b97f07927ca2f59ae9f1522b74b60e2e286e06de.js?body=1" for ::1 at 2015-11-10 22:44:20 -0600
+
+
+Started GET "/assets/constants/assignment_constants.self-bf51f924afb661d9edaa8f1d4b1ec99b6ad3c0b1c7421e6b587803f44c26a1ef.js?body=1" for ::1 at 2015-11-10 22:44:20 -0600
+
+
+Started GET "/assets/constants/submission_constants.self-0c40e9f6b665141aae18049262bebc714bc32c0112105fc80b67aa395746ffa0.js?body=1" for ::1 at 2015-11-10 22:44:20 -0600
+
+
+Started GET "/assets/dispatcher/dispatcher.self-27d32ce23a523f84ac3386e725bc78d6b63ecc0427feb3361640e6233142ae34.js?body=1" for ::1 at 2015-11-10 22:44:20 -0600
+
+
+Started GET "/assets/stores/assignment.self-1030045ede3c1b877b003a110f699e00b22bc3ef8910075e1d45bde925a344e7.js?body=1" for ::1 at 2015-11-10 22:44:20 -0600
+
+
+Started GET "/assets/stores/submission.self-6097c1925b630d6e853351e24e2e1709747034f2886bc9f246cebefca2e27086.js?body=1" for ::1 at 2015-11-10 22:44:20 -0600
+
+
+Started GET "/assets/util/api_util.self-dc970a0df3da01172ae47991e9e6bde643fc07f0b5272a35d73f74cfd70c892c.js?body=1" for ::1 at 2015-11-10 22:44:20 -0600
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-10 22:44:20 -0600
+
+
+Started GET "/" for ::1 at 2015-11-10 22:45:43 -0600
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html within layouts/application (0.1ms)
+Completed 200 OK in 266ms (Views: 265.5ms)
+
+
+Started GET "/assets/api/speeches.css" for ::1 at 2015-11-10 22:45:43 -0600
+
+
+Started GET "/" for ::1 at 2015-11-10 22:46:06 -0600
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html within layouts/application (0.1ms)
+Completed 200 OK in 202ms (Views: 201.7ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/actions/api_actions.self-a6a29c6a4f1f356ab06a6f759b9d39ef1fb559a6fdd66498be556ec2e622a21e.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/assignment_holder.self-316701c5595609ea232d8c385dfc275e644bdaa6a84ec45603aac6d35c383607.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/development-with-addons/react.self-eb8c71fecbd80164b57078dcf4c66c91c12c9c84b59938c485aea8b6ae3538c1.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/components/assignments/assignment_index.self-7616a8a9db0000d351a06f4263f8ffbaa738c610cc1152a397b25e61545f3e20.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/components/about_page.self-e3a96eadd46b8c0e78a6b642a242b0d0f7eb3790335dd874bcf5aa3275d57c22.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/components/assignments/assignment_form.self-9e09fdccba1c3acb9c65d8ce15752e1bfd8d9de45db8df6afd51a18a4199a0e4.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/application.self-679f8c27fa7addbafd97134c2a3155567ea911e7b6d25dd620795c9abaa225a8.css?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/components/assignments/assignment_index_item.self-7c25905e9e4b9b46b2b7d5ccaf63c1cac769d861577ee1d49713cb78f380b839.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/components/assignments/assignment_show.self-ce2eca3c312551d8597596701cd2bdab9dfd0014d1ebb2549ffd381253c6319e.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/components/headerAbout.self-0114c4a55734bf6fe0468915cb03c754c84cb23ffdf3c803308e1962487091e2.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/components/assignments/speech_form.self-887300ee174884123fe7f24e05895aab4adf6db44ca762afa7ef9ce6729d0d7d.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/components/navbar.self-7902b981244bd90ee9c9b6e32cf8f59ecb33b6a99f66f0919cea2732b6c1ccc3.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/components/submissions/submission_index.self-290697bb8e4c5c1be9986766af43583b4cd505df792a91e76ac2c2f6530fd107.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/components/submissions/submission_index_item.self-13fc05f55df003aa5bbdfac0b97f07927ca2f59ae9f1522b74b60e2e286e06de.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/constants/assignment_constants.self-bf51f924afb661d9edaa8f1d4b1ec99b6ad3c0b1c7421e6b587803f44c26a1ef.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/constants/submission_constants.self-0c40e9f6b665141aae18049262bebc714bc32c0112105fc80b67aa395746ffa0.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/stores/submission.self-6097c1925b630d6e853351e24e2e1709747034f2886bc9f246cebefca2e27086.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/api/speeches.css" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/dispatcher/dispatcher.self-27d32ce23a523f84ac3386e725bc78d6b63ecc0427feb3361640e6233142ae34.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/stores/assignment.self-1030045ede3c1b877b003a110f699e00b22bc3ef8910075e1d45bde925a344e7.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
+
+
+Started GET "/assets/util/api_util.self-dc970a0df3da01172ae47991e9e6bde643fc07f0b5272a35d73f74cfd70c892c.js?body=1" for ::1 at 2015-11-10 22:46:07 -0600
