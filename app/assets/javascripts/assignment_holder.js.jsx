@@ -19,17 +19,16 @@ var StartReact = function () {
 
     React.render((
       <Router>
-        <Route path="/" component={AssignmentIndex}>
-          <Route path="assignments/:assignmentID" components={AssignmentShow}>
-            <Route path="submissions" components = {SubmissionIndex}>
-            </Route>
+      <Route path="/" component={AssignmentIndex}>
+        <Route path="assignments/:assignmentID" components={AssignmentShow}>
+          <Route path="submissions" components = {SubmissionIndex}>
           </Route>
         </Route>
+      </Route>
       </Router>
     ), rootEl);
   });
 }
-
 
 // <Route path="/" component={App}>
 // </Route>

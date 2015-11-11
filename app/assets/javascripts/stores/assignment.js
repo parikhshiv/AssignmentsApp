@@ -1,6 +1,7 @@
 (function(root) {
   'use strict';
   var _assignments = [];
+  var _newAssignments = [];
   var CHANGE_EVENT = "change";
 
   var resetAssignments = function(assignments){
@@ -22,6 +23,12 @@
   var AssignmentStore = root.AssignmentStore = $.extend({}, EventEmitter.prototype, {
     all: function () {
       return _assignments.slice();
+    },
+    allNew: function () {
+      return _newAssignments.slice();
+    },
+    addNewAssignment: function (assignment) {
+      _newAssignments.push(assignment)
     },
     addChangeListener: function(callback){
       this.on(CHANGE_EVENT, callback);

@@ -26,13 +26,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 gem 'better_errors'
-gem 'newrelic_rpm'
 gem 'react-rails', '~> 1.3.0'
 gem 'flux-rails-assets'
 gem 'seed_dump'
 gem 'redis-rails'
 gem 'bootstrap-sass'
-gem 'kaminari'
 
 group :production do
   gem "rails_12factor"

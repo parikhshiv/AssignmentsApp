@@ -19,10 +19,9 @@ SubmissionIndexItem = React.createClass({
         </div>
         <div className="media-body">
           <h4 className="media-heading">{this.props.creator.first_name} {this.props.creator.last_name}</h4>
-          <div className="pull-right">turned in on {submittedAt.toDateString()}</div>
+          <div className="pull-right turn-in">Turned in on {submittedAt.toDateString()}</div>
           <br/>
-          <br/>
-          <div className={hidden}>
+          <div className={"content" + hidden}>
             {this.props.content}
           </div>
         </div>
