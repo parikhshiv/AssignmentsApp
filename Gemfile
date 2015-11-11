@@ -32,7 +32,6 @@ gem 'flux-rails-assets'
 gem 'seed_dump'
 gem 'redis-rails'
 gem 'bootstrap-sass'
-gem 'kaminari'
 
 group :production do
   gem "rails_12factor"

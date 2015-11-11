@@ -2,28 +2,35 @@ var AssignmentShow = React.createClass({
   mixins: [ReactRouter.History],
   getInitialState: function () {
     var assignmentID = this.props.params.assignmentID;
-    var assignment = this._findAssignmentById(assignmentID) || {} ;
+    var assignment = this._setAssignment(assignmentID);
     return { assignment: assignment}
   },
   componentWillReceiveProps: function (nextProps) {
     ApiUtil.fetchSubmissions(nextProps.params.assignmentID);
     var assignmentID = nextProps.params.assignmentID;
-    var assignment = this._findAssignmentById(assignmentID) || {} ;
+    var assignment = this._setAssignment(assignmentID);
     this.setState({ assignment: assignment});
   },
   componentWillMount: function () {
     AssignmentStore.addChangeListener(this._updateAssignment);
-    // window.addEventListener('mouseup', this.clearAnnotationLink);
     ApiUtil.fetchAssignments();
   },
   componentWillUnmount: function () {
     AssignmentStore.removeChangeListener(this._updateAssignment);
-    // window.removeEventListener('mouseup', this.clearAnnotationLink);
   },
   _updateAssignment: function () {
     var assignmentID = this.props.params.assignmentID;
-    var assignment = this._findAssignmentById(assignmentID) || {} ;
+    var assignment = this._setAssignment(assignmentID);
     this.setState({ assignment: assignment});
+  },
+  _findNewAssignmentById: function (id) {
+    var res;
+     AssignmentStore.allNew().forEach(function (assignment) {
+      if (id == assignment.id) {
+        res = assignment;
+      }
+    }.bind(this));
+    return res;
   },
   _findAssignmentById: function (id) {
     var res;
@@ -33,6 +40,14 @@ var AssignmentShow = React.createClass({
       }
     }.bind(this));
     return res;
+  },
+  _setAssignment: function (assignmentID) {
+    if (assignmentID < 100) {
+      var assignment = this._findNewAssignmentById(assignmentID) || {}
+    } else {
+      var assignment = this._findAssignmentById(assignmentID) || {} ;
+    }
+    return assignment;
   },
   assignmentClick: function (e) {
     e.preventDefault();
