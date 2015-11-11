@@ -64,3 +64,4 @@
 [11/10/15 00:25:05 -0600 Shiv-Parikhs-MacBook.local (956)] INFO : Doing deferred dependency-detection before Rack startup
 [11/10/15 00:25:12 -0600 Shiv-Parikhs-MacBook.local (956)] ERROR : Invalid license key, please contact support@newrelic.com
 [11/10/15 00:25:12 -0600 Shiv-Parikhs-MacBook.local (956)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[11/10/15 03:28:44 -0600 Shiv-Parikhs-MacBook.local (956)] INFO : Starting Agent shutdown
