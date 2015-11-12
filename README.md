@@ -8,9 +8,9 @@ AssignmentsApp is a single-page client-side application built on React.js and Fl
 
 ## Landing Page
 
-![Landing Page](https://github.com/parikhshiv/SpeechGenius/blob/master/docs/screenshots/landing.png)
+![Landing Page](https://github.com/parikhshiv/AssignmentsApp/blob/master/docs/screenshots/landing.png)
 
-## Students submissions are sorted by Last Name for easy access
+### Students submissions are sorted by student's last name for easy access
 
 ```
 var last_name_sort = function (a, b) {
@@ -26,7 +26,7 @@ var last_name_sort = function (a, b) {
 };
 ```
 
-## Client-side grading function added - kept as React state of student submission
+### Client-side grading function added - kept as React state of student submission
 
 ```
 def show
@@ -38,14 +38,14 @@ end
 
 ## Minimum Viable Product
 
-### Requirements
+#### Requirements
 1. A teacher can see a sidebar list of assignments with title and due date.
 2. A teacher can select an assignment by clicking on it in the sidebar.
 3. A teacher can toggle between assignment details and student submissions for the
 selected assignment.
 4. A teacher can expand a student submission in place to see the submission content..
 
-### Optional features
+#### Optional features
 1. The URL should reflect the selected assignment, either using the History API or a hash
 fragment.
 2. Reloading a page with a selected assignment should keep the assignment selected.
