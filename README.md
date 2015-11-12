@@ -1,10 +1,10 @@
 ### AssignmentsApp
 
-<!-- [Live Link](http://speechgenius.xyz)
+[Live Link](http://speechgenius.xyz)
 
 ## Summary
 
-SpeechGenius is a full-stack web app built on Ruby on Rails and React.js. SpeechGenius allows users to add, share, and annotate speeches. Annotations are created by simply highlighting speech text and submitting annotation content. Users can also vote on content and comment on speeches and annotations.
+AssignmentsApp is a single-page client-side application built on React.js and Flux that enables teachers to view student submissions to assignments. It does not connect to a database, but instead accesses the Edmodo API.
 
 ## Landing Page
 
@@ -23,29 +23,23 @@ SpeechGenius is a full-stack web app built on Ruby on Rails and React.js. Speech
 ![Landing Page](https://github.com/parikhshiv/SpeechGenius/blob/master/docs/screenshots/annotation_view.png)
 
 
-## Interpreting Text Selection
-
-Highlighting text within speech body triggers annotation creation. The exact position of the highlighted text within the speech body must be correctly identified using window.getSelection, as this position is used to change the speech's text to incorporate the correct link:
+## Students submissions are sorted by Last Name for easy access
 
 ```
-  var selection = window.getSelection();
-  var speech = document.getElementById('text');
-  var text = speech.innerHTML;
-  var array = text.split('');
-  var index = selection.anchorOffset < selection.extentOffset ?
-    selection.anchorOffset : selection.extentOffset;
-  var length = selection.toString().length;
-  var add_on = text.indexOf(selection.anchorNode.data);
-  var substring = text.substring(index + add_on, index + length + add_on);
-  array.splice(index + add_on, length,
-    "<a id='active' class='annotation-link'>" +
-     selection.toString() + "</a>" );
-  speech.innerHTML = array.join('');
+var last_name_sort = function (a, b) {
+  var first = a.creator.last_name;
+  var second = b.creator.last_name;
+  if (first < second) {
+    return -1;
+  } else if (first === second) {
+    return 0;
+  } else {
+    return 1;
+  }
+};
 ```
 
-## Eager Loading
-
-Content-rich pages like speech show pages render data from speeches many nested associations. To accomplish this quickly, eager loading is utilized server-side:
+## Client-side grading function added - kept as React state of student submission
 
 ```
 def show
@@ -55,30 +49,19 @@ def show
 end
 ```
 
-The JSON API view may then immediately provide the dense data already retrieved from the database:
-
-```
-json.extract! @speech, :id, :title, :speaker, :user_id,
-    :created_at, :updated_at, :image_url
-json.content Speech.lyrics_formatting(@speech.content)
-json.comments do
-  json.partial! 'api/comments/comment', collection: @speech.comments, as: :comment
-end
-json.votes do
-  json.partial! 'api/votes/vote', collection: @speech.votes, as: :vote
-end
-```
-
 ## Minimum Viable Product
 
-SpeechGenius is a clone of Rap Genius for speech annotation built on Ruby on Rails and React.js. Users can:
+Requirements
+1. A teacher can see a sidebar list of assignments with title and due date.
+2. A teacher can select an assignment by clicking on it in the sidebar.
+3. A teacher can toggle between assignment details and student submissions for the
+selected assignment.
+4. A teacher can expand a student submission in place to see the submission content..
 
- - Create accounts
- - Create sessions (log in)
- - Create, read, edit and delete speeches
- - Create, read, edit and delete annotations on speeches
- - Create, read and delete comments on speeches
- - Create, read and delete comments on annotations
- - Vote on speeches, annotations and comments - comments and new speeches should be ordered by total votes
- - Search for speeches
- - Guest login -->
+Optional features
+1. The URL should reflect the selected assignment, either using the History API or a hash
+fragment.
+2. Reloading a page with a selected assignment should keep the assignment selected.
+3. Add a button that brings up a modal to create a new assignment. The assignment should
+be added to the sidebar and be selectable. The new assignment should only be created
+on the client (no API call to create the assignment on the server).
