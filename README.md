@@ -36,7 +36,7 @@ SubmissionIndexItem = React.createClass({
   }
 ```
 
-Grades stored browser side in submission store, and incorporated into submissions
+Grades stored in browser side hash in submission store, and incorporated into submissions:
 
 ```
 var _incorporateGrades = function () {
