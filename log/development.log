@@ -62133,3 +62133,624 @@ Started GET "/assets/util/api_util.self-1abc3054a77ef547d62d85c887287e691ce5d4e8
 
 
 Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-12 13:41:10 -0600
+
+
+Started GET "/" for ::1 at 2015-11-12 13:49:20 -0600
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html within layouts/application (0.7ms)
+Completed 200 OK in 3966ms (Views: 3959.9ms)
+
+
+Started GET "/assets/components/submissions/submission_index_item.self-d3999ac255a62400bd68a8200b4805422f73e2f79cff86c85db18c60679f364e.js?body=1" for ::1 at 2015-11-12 13:49:25 -0600
+
+
+Started GET "/assets/stores/submission.self-5c10a7653903f00677be7dc54af9148b78f0726be743def01074f93140bff1a6.js?body=1" for ::1 at 2015-11-12 13:49:25 -0600
+
+
+Started GET "/" for ::1 at 2015-11-12 13:49:43 -0600
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html within layouts/application (0.1ms)
+Completed 200 OK in 2610ms (Views: 2608.8ms)
+
+
+Started GET "/assets/components/submissions/submission_index_item.self-9b6d6aa8fffbc05893de9562fd054a7d4cd89739c49b59d35e0502600b3ead02.js?body=1" for ::1 at 2015-11-12 13:49:46 -0600
+
+
+Started GET "/" for ::1 at 2015-11-12 13:57:12 -0600
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html within layouts/application (0.7ms)
+Completed 200 OK in 1727ms (Views: 1720.8ms)
+
+
+Started GET "/assets/stores/submission.self-483209caddcdeca73230ed8c695265338279590c73a12028fea426dfa60386ac.js?body=1" for ::1 at 2015-11-12 13:57:14 -0600
+
+
+Started GET "/" for ::1 at 2015-11-12 13:58:36 -0600
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html within layouts/application (0.4ms)
+Completed 200 OK in 824ms (Views: 818.6ms)
+
+
+Started GET "/assets/stores/submission.self-2f898e13a100df4a07beeac14b3a14538c9e8617ee85881916a93ffd5203740b.js?body=1" for ::1 at 2015-11-12 13:58:37 -0600
+
+
+Started GET "/" for ::1 at 2015-11-12 15:25:02 -0600
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 2332ms
+
+ExecJS::RuntimeError - SyntaxError: unknown: Unexpected token (29:11)
+  27 |   },
+  28 |   _findNewAssignmentById: function (id) {
+> 29 |     return if (AssignmentStore.all().length === 0);
+     |            ^
+  30 |     var res;
+  31 |      AssignmentStore.allNew().forEach(function (assignment) {
+  32 |       if (id == assignment.id) {:
+  execjs (2.6.0) lib/execjs/external_runtime.rb:84:in `extract_result'
+  execjs (2.6.0) lib/execjs/external_runtime.rb:39:in `exec'
+  execjs (2.6.0) lib/execjs/external_runtime.rb:21:in `eval'
+  execjs (2.6.0) lib/execjs/external_runtime.rb:46:in `call'
+  babel-transpiler (0.7.0) lib/babel/transpiler.rb:28:in `transform'
+  react-rails (1.3.0) lib/react/jsx/babel_transformer.rb:17:in `transform'
+  react-rails (1.3.0) lib/react/jsx.rb:20:in `transform'
+  react-rails (1.3.0) lib/react/jsx/template.rb:13:in `evaluate'
+  tilt (2.0.1) lib/tilt/template.rb:96:in `render'
+  sprockets (3.4.0) lib/sprockets/legacy_tilt_processor.rb:25:in `call'
+  sprockets (3.4.0) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.4.0) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.4.0) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.4.0) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.4.0) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.4.0) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.4.0) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.4.0) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.4.0) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.4.0) lib/sprockets/bundle.rb:23:in `block in call'
+  sprockets (3.4.0) lib/sprockets/utils.rb:183:in `dfs'
+  sprockets (3.4.0) lib/sprockets/bundle.rb:24:in `call'
+  sprockets (3.4.0) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.4.0) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.4.0) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.4.0) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.4.0) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.4.0) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.4.0) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.4.0) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.4.0) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.4.0) lib/sprockets/base.rb:66:in `find_asset'
+  sprockets (3.4.0) lib/sprockets/environment.rb:30:in `find_asset'
+  sprockets (3.4.0) lib/sprockets/base.rb:92:in `[]'
+  sprockets-rails (2.3.3) lib/sprockets/rails/helper.rb:230:in `lookup_asset_for_path'
+  sprockets-rails (2.3.3) lib/sprockets/rails/helper.rb:190:in `check_errors_for'
+  sprockets-rails (2.3.3) lib/sprockets/rails/helper.rb:137:in `block in javascript_include_tag'
+  sprockets-rails (2.3.3) lib/sprockets/rails/helper.rb:136:in `javascript_include_tag'
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__28947751494171558_70194391436940'
+  actionview (4.2.4) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.4) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.4) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.4) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.4) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.4) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.4) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.4) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.4) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/shivparikh/.rbenv/versions/2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.2.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  app/controllers/static_pages_controller.rb:3:in `home'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  react-rails (1.3.0) lib/react/rails/render_middleware.rb:13:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/shivparikh/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/shivparikh/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/shivparikh/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/566bf58fb4047e97/variables" for ::1 at 2015-11-12 15:25:05 -0600
+
+
+Started GET "/" for ::1 at 2015-11-12 15:25:12 -0600
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 1362ms
+
+ExecJS::RuntimeError - SyntaxError: unknown: Unexpected token (29:16)
+  27 |   },
+  28 |   _findNewAssignmentById: function (id) {
+> 29 |     return null if (AssignmentStore.all().length === 0);
+     |                 ^
+  30 |     var res;
+  31 |      AssignmentStore.allNew().forEach(function (assignment) {
+  32 |       if (id == assignment.id) {:
+  execjs (2.6.0) lib/execjs/external_runtime.rb:84:in `extract_result'
+  execjs (2.6.0) lib/execjs/external_runtime.rb:39:in `exec'
+  execjs (2.6.0) lib/execjs/external_runtime.rb:21:in `eval'
+  execjs (2.6.0) lib/execjs/external_runtime.rb:46:in `call'
+  babel-transpiler (0.7.0) lib/babel/transpiler.rb:28:in `transform'
+  react-rails (1.3.0) lib/react/jsx/babel_transformer.rb:17:in `transform'
+  react-rails (1.3.0) lib/react/jsx.rb:20:in `transform'
+  react-rails (1.3.0) lib/react/jsx/template.rb:13:in `evaluate'
+  tilt (2.0.1) lib/tilt/template.rb:96:in `render'
+  sprockets (3.4.0) lib/sprockets/legacy_tilt_processor.rb:25:in `call'
+  sprockets (3.4.0) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.4.0) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.4.0) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.4.0) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.4.0) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.4.0) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.4.0) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.4.0) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.4.0) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.4.0) lib/sprockets/bundle.rb:23:in `block in call'
+  sprockets (3.4.0) lib/sprockets/utils.rb:183:in `dfs'
+  sprockets (3.4.0) lib/sprockets/bundle.rb:24:in `call'
+  sprockets (3.4.0) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.4.0) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.4.0) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.4.0) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.4.0) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.4.0) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.4.0) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.4.0) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.4.0) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.4.0) lib/sprockets/base.rb:66:in `find_asset'
+  sprockets (3.4.0) lib/sprockets/environment.rb:30:in `find_asset'
+  sprockets (3.4.0) lib/sprockets/base.rb:92:in `[]'
+  sprockets-rails (2.3.3) lib/sprockets/rails/helper.rb:230:in `lookup_asset_for_path'
+  sprockets-rails (2.3.3) lib/sprockets/rails/helper.rb:190:in `check_errors_for'
+  sprockets-rails (2.3.3) lib/sprockets/rails/helper.rb:137:in `block in javascript_include_tag'
+  sprockets-rails (2.3.3) lib/sprockets/rails/helper.rb:136:in `javascript_include_tag'
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__28947751494171558_70194391436940'
+  actionview (4.2.4) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.4) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.4) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.4) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.4) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.4) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.4) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.4) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.4) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/shivparikh/.rbenv/versions/2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.2.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  app/controllers/static_pages_controller.rb:3:in `home'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  react-rails (1.3.0) lib/react/rails/render_middleware.rb:13:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/shivparikh/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/shivparikh/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/shivparikh/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/38a0b32ce0897f1f/variables" for ::1 at 2015-11-12 15:25:13 -0600
+
+
+Started GET "/" for ::1 at 2015-11-12 15:25:40 -0600
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html within layouts/application (0.1ms)
+Completed 200 OK in 2229ms (Views: 2228.2ms)
+
+
+Started GET "/assets/components/assignments/assignment_show.self-9d517d153edd4fdbe83bb865a3018668d99b20f4c492ab5328f8c91d332469df.js?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/assets/development-with-addons/react.self-eb8c71fecbd80164b57078dcf4c66c91c12c9c84b59938c485aea8b6ae3538c1.js?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/assets/application.self-2604888fc21d153deeca95bb9e60b275d91ae021df753c1b8c0cc362b8be7cce.css?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/assets/actions/api_actions.self-b1ec2ed8f34f90962ad122beed1cb75d96ce31dc85f1c38277f32d38bc2ddc9b.js?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/assets/assignment_holder.self-9da817b64e1b20242653f83160b37aacd2a7ae4424f34c6bded8d95a80541357.js?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/assets/components/assignments/assignment_form.self-4a7b05ea8296acf1788145cb47450382c9caa92fc95a1ab72991a934cc8db488.js?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/assets/components/assignments/assignment_index.self-b3a9702dd556d44141e15613298129e777c8793e231a2cf56c9db810652146e4.js?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/assets/components/assignments/assignment_index_item.self-7c25905e9e4b9b46b2b7d5ccaf63c1cac769d861577ee1d49713cb78f380b839.js?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/assets/components/pagination.self-47562e64e98d96b19a69cb878136b1474f1db8f86adde900197372dec3e2db99.js?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/assets/components/navbar.self-2633f6585c0f1d7ae5cee821aaf4fd870fd21db83814c8380f0d001ac3f335cd.js?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/assets/components/submissions/submission_index.self-5f7a635f5959f4604041e96d5d5b7abc833b46d81475f6a4717a0731ab8aee0b.js?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/assets/components/submissions/submission_index_item.self-d3999ac255a62400bd68a8200b4805422f73e2f79cff86c85db18c60679f364e.js?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/assets/constants/assignment_constants.self-bf51f924afb661d9edaa8f1d4b1ec99b6ad3c0b1c7421e6b587803f44c26a1ef.js?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/assets/constants/submission_constants.self-0c40e9f6b665141aae18049262bebc714bc32c0112105fc80b67aa395746ffa0.js?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/assets/dispatcher/dispatcher.self-27d32ce23a523f84ac3386e725bc78d6b63ecc0427feb3361640e6233142ae34.js?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/assets/util/api_util.self-1abc3054a77ef547d62d85c887287e691ce5d4e8d3783723383ea29bbaa5eb81.js?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/assets/stores/submission.self-2f898e13a100df4a07beeac14b3a14538c9e8617ee85881916a93ffd5203740b.js?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/assets/stores/assignment.self-c518c90b3489cc24224a4e1b9d351ed6dacbd88953303544dd98727f75923c8d.js?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/assets/application.self-2604888fc21d153deeca95bb9e60b275d91ae021df753c1b8c0cc362b8be7cce.css?body=1" for ::1 at 2015-11-12 15:25:42 -0600
+
+
+Started GET "/" for ::1 at 2015-11-12 15:25:54 -0600
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html within layouts/application (0.1ms)
+Completed 200 OK in 283ms (Views: 281.7ms)
+
+
+Started GET "/" for ::1 at 2015-11-12 15:34:12 -0600
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html within layouts/application (5.5ms)
+Completed 200 OK in 1844ms (Views: 1833.4ms)
+
+
+Started GET "/assets/stores/submission.self-7803c8af82b4dc848312530455a1c13c7265b88997fd2373966c14bff0968d2e.js?body=1" for ::1 at 2015-11-12 15:34:14 -0600
+
+
+Started GET "/" for ::1 at 2015-11-12 15:34:44 -0600
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html within layouts/application (0.1ms)
+Completed 200 OK in 192ms (Views: 191.2ms)
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-11-12 15:34:44 -0600
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-12 15:34:44 -0600
+
+
+Started GET "/assets/development-with-addons/react.self-eb8c71fecbd80164b57078dcf4c66c91c12c9c84b59938c485aea8b6ae3538c1.js?body=1" for ::1 at 2015-11-12 15:34:44 -0600
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-11-12 15:34:44 -0600
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-12 15:34:44 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-12 15:34:44 -0600
+
+
+Started GET "/assets/components/assignments/assignment_form.self-4a7b05ea8296acf1788145cb47450382c9caa92fc95a1ab72991a934cc8db488.js?body=1" for ::1 at 2015-11-12 15:34:44 -0600
+
+
+Started GET "/assets/application.self-2604888fc21d153deeca95bb9e60b275d91ae021df753c1b8c0cc362b8be7cce.css?body=1" for ::1 at 2015-11-12 15:34:44 -0600
+
+
+Started GET "/assets/actions/api_actions.self-b1ec2ed8f34f90962ad122beed1cb75d96ce31dc85f1c38277f32d38bc2ddc9b.js?body=1" for ::1 at 2015-11-12 15:34:44 -0600
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for ::1 at 2015-11-12 15:34:44 -0600
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-11-12 15:34:44 -0600
+
+
+Started GET "/assets/assignment_holder.self-9da817b64e1b20242653f83160b37aacd2a7ae4424f34c6bded8d95a80541357.js?body=1" for ::1 at 2015-11-12 15:34:44 -0600
+
+
+Started GET "/assets/components/assignments/assignment_index.self-b3a9702dd556d44141e15613298129e777c8793e231a2cf56c9db810652146e4.js?body=1" for ::1 at 2015-11-12 15:34:44 -0600
+
+
+Started GET "/assets/components/assignments/assignment_show.self-9d517d153edd4fdbe83bb865a3018668d99b20f4c492ab5328f8c91d332469df.js?body=1" for ::1 at 2015-11-12 15:34:44 -0600
+
+
+Started GET "/assets/components/submissions/submission_index.self-5f7a635f5959f4604041e96d5d5b7abc833b46d81475f6a4717a0731ab8aee0b.js?body=1" for ::1 at 2015-11-12 15:34:44 -0600
+
+
+Started GET "/assets/components/submissions/submission_index_item.self-d3999ac255a62400bd68a8200b4805422f73e2f79cff86c85db18c60679f364e.js?body=1" for ::1 at 2015-11-12 15:34:44 -0600
+
+
+Started GET "/assets/stores/assignment.self-c518c90b3489cc24224a4e1b9d351ed6dacbd88953303544dd98727f75923c8d.js?body=1" for ::1 at 2015-11-12 15:34:44 -0600
+
+
+Started GET "/assets/components/navbar.self-2633f6585c0f1d7ae5cee821aaf4fd870fd21db83814c8380f0d001ac3f335cd.js?body=1" for ::1 at 2015-11-12 15:34:44 -0600
+
+
+Started GET "/assets/stores/submission.self-7803c8af82b4dc848312530455a1c13c7265b88997fd2373966c14bff0968d2e.js?body=1" for ::1 at 2015-11-12 15:34:44 -0600
+
+
+Started GET "/assets/util/api_util.self-1abc3054a77ef547d62d85c887287e691ce5d4e8d3783723383ea29bbaa5eb81.js?body=1" for ::1 at 2015-11-12 15:34:44 -0600
+
+
+Started GET "/assets/dispatcher/dispatcher.self-27d32ce23a523f84ac3386e725bc78d6b63ecc0427feb3361640e6233142ae34.js?body=1" for ::1 at 2015-11-12 15:34:44 -0600
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-12 15:34:44 -0600
+
+
+Started GET "/assets/components/assignments/assignment_index_item.self-7c25905e9e4b9b46b2b7d5ccaf63c1cac769d861577ee1d49713cb78f380b839.js?body=1" for ::1 at 2015-11-12 15:34:45 -0600
+
+
+Started GET "/assets/constants/assignment_constants.self-bf51f924afb661d9edaa8f1d4b1ec99b6ad3c0b1c7421e6b587803f44c26a1ef.js?body=1" for ::1 at 2015-11-12 15:34:45 -0600
+
+
+Started GET "/assets/constants/submission_constants.self-0c40e9f6b665141aae18049262bebc714bc32c0112105fc80b67aa395746ffa0.js?body=1" for ::1 at 2015-11-12 15:34:45 -0600
+
+
+Started GET "/assets/components/pagination.self-47562e64e98d96b19a69cb878136b1474f1db8f86adde900197372dec3e2db99.js?body=1" for ::1 at 2015-11-12 15:34:45 -0600
+
+
+Started GET "/" for ::1 at 2015-11-12 15:34:55 -0600
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html within layouts/application (0.1ms)
+Completed 200 OK in 190ms (Views: 188.9ms)
+
+
+Started GET "/" for ::1 at 2015-11-12 15:35:42 -0600
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html within layouts/application (0.1ms)
+Completed 200 OK in 217ms (Views: 216.1ms)
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-12 15:35:43 -0600
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-11-12 15:35:43 -0600
+
+
+Started GET "/assets/development-with-addons/react.self-eb8c71fecbd80164b57078dcf4c66c91c12c9c84b59938c485aea8b6ae3538c1.js?body=1" for ::1 at 2015-11-12 15:35:43 -0600
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-11-12 15:35:43 -0600
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-11-12 15:35:43 -0600
+
+
+Started GET "/assets/application.self-2604888fc21d153deeca95bb9e60b275d91ae021df753c1b8c0cc362b8be7cce.css?body=1" for ::1 at 2015-11-12 15:35:43 -0600
+
+
+Started GET "/assets/actions/api_actions.self-b1ec2ed8f34f90962ad122beed1cb75d96ce31dc85f1c38277f32d38bc2ddc9b.js?body=1" for ::1 at 2015-11-12 15:35:43 -0600
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-12 15:35:43 -0600
+
+
+Started GET "/assets/components/assignments/assignment_index.self-b3a9702dd556d44141e15613298129e777c8793e231a2cf56c9db810652146e4.js?body=1" for ::1 at 2015-11-12 15:35:43 -0600
+
+
+Started GET "/assets/components/assignments/assignment_index_item.self-7c25905e9e4b9b46b2b7d5ccaf63c1cac769d861577ee1d49713cb78f380b839.js?body=1" for ::1 at 2015-11-12 15:35:43 -0600
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for ::1 at 2015-11-12 15:35:43 -0600
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-12 15:35:43 -0600
+
+
+Started GET "/assets/assignment_holder.self-9da817b64e1b20242653f83160b37aacd2a7ae4424f34c6bded8d95a80541357.js?body=1" for ::1 at 2015-11-12 15:35:43 -0600
+
+
+Started GET "/assets/components/navbar.self-2633f6585c0f1d7ae5cee821aaf4fd870fd21db83814c8380f0d001ac3f335cd.js?body=1" for ::1 at 2015-11-12 15:35:43 -0600
+
+
+Started GET "/assets/components/assignments/assignment_form.self-4a7b05ea8296acf1788145cb47450382c9caa92fc95a1ab72991a934cc8db488.js?body=1" for ::1 at 2015-11-12 15:35:43 -0600
+
+
+Started GET "/assets/components/submissions/submission_index_item.self-d3999ac255a62400bd68a8200b4805422f73e2f79cff86c85db18c60679f364e.js?body=1" for ::1 at 2015-11-12 15:35:43 -0600
+
+
+Started GET "/assets/components/assignments/assignment_show.self-9d517d153edd4fdbe83bb865a3018668d99b20f4c492ab5328f8c91d332469df.js?body=1" for ::1 at 2015-11-12 15:35:43 -0600
+
+
+Started GET "/assets/constants/submission_constants.self-0c40e9f6b665141aae18049262bebc714bc32c0112105fc80b67aa395746ffa0.js?body=1" for ::1 at 2015-11-12 15:35:43 -0600
+
+
+Started GET "/assets/components/submissions/submission_index.self-5f7a635f5959f4604041e96d5d5b7abc833b46d81475f6a4717a0731ab8aee0b.js?body=1" for ::1 at 2015-11-12 15:35:43 -0600
+
+
+Started GET "/assets/constants/assignment_constants.self-bf51f924afb661d9edaa8f1d4b1ec99b6ad3c0b1c7421e6b587803f44c26a1ef.js?body=1" for ::1 at 2015-11-12 15:35:43 -0600
+
+
+Started GET "/assets/components/pagination.self-47562e64e98d96b19a69cb878136b1474f1db8f86adde900197372dec3e2db99.js?body=1" for ::1 at 2015-11-12 15:35:43 -0600
+
+
+Started GET "/assets/stores/assignment.self-c518c90b3489cc24224a4e1b9d351ed6dacbd88953303544dd98727f75923c8d.js?body=1" for ::1 at 2015-11-12 15:35:43 -0600
+
+
+Started GET "/assets/dispatcher/dispatcher.self-27d32ce23a523f84ac3386e725bc78d6b63ecc0427feb3361640e6233142ae34.js?body=1" for ::1 at 2015-11-12 15:35:43 -0600
+
+
+Started GET "/assets/stores/submission.self-7803c8af82b4dc848312530455a1c13c7265b88997fd2373966c14bff0968d2e.js?body=1" for ::1 at 2015-11-12 15:35:43 -0600
+
+
+Started GET "/assets/util/api_util.self-1abc3054a77ef547d62d85c887287e691ce5d4e8d3783723383ea29bbaa5eb81.js?body=1" for ::1 at 2015-11-12 15:35:43 -0600
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-12 15:35:43 -0600

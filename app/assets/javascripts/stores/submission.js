@@ -1,6 +1,7 @@
 (function(root) {
   'use strict';
   var _submissions = [];
+  var _gradedSubmissions = {};
   var CHANGE_EVENT = "change";
 
   var resetSubmissions = function(submissions){
@@ -19,8 +20,15 @@
     }
   };
 
+  var _incorporateGrades = function () {
+    _submissions.forEach(function (submission) {
+      submission.grade = _gradedSubmissions[submission.id];
+    });
+  };
+
   var SubmissionStore = root.SubmissionStore = $.extend({}, EventEmitter.prototype, {
     all: function () {
+      _incorporateGrades();
       return _submissions.slice().sort(last_name_sort);
     },
     addChangeListener: function(callback){
@@ -28,6 +36,9 @@
     },
     removeChangeListener: function(callback){
       this.removeListener(CHANGE_EVENT, callback);
+    },
+    addGrade: function (id, grade) {
+      _gradedSubmissions[id] = grade;
     },
     dispatcherID: AppDispatcher.register(function (payload) {
       switch (payload.actionType) {

@@ -36,6 +36,16 @@ SubmissionIndexItem = React.createClass({
   }
 ```
 
+Grades stored browser side in submission store, and incorporated into submissions
+
+```
+var _incorporateGrades = function () {
+  _submissions.forEach(function (submission) {
+    submission.grade = _gradedSubmissions[submission.id];
+  });
+};
+```
+
 ## Minimum Viable Product
 
 #### Requirements

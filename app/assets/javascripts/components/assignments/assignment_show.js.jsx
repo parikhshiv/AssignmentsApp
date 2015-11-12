@@ -26,13 +26,15 @@ var AssignmentShow = React.createClass({
     this.setState({ assignment: assignment});
   },
   _findNewAssignmentById: function (id) {
-    var res;
-     AssignmentStore.allNew().forEach(function (assignment) {
-      if (id == assignment.id) {
-        res = assignment;
-      }
-    }.bind(this));
-    return res;
+    if (AssignmentStore.all().length > 0) {
+      var res;
+       AssignmentStore.allNew().forEach(function (assignment) {
+        if (id == assignment.id) {
+          res = assignment;
+        }
+      }.bind(this));
+      return res;
+    }
   },
   _findAssignmentById: function (id) {
     var res;

@@ -1,13 +1,16 @@
 SubmissionIndexItem = React.createClass({
   mixins: [ReactRouter.History, React.addons.LinkedStateMixin],
   getInitialState: function () {
-    return {detailHidden: true, grade: null}
+    return {detailHidden: true, grade: this.props.grade}
   },
   onClick: function (e) {
     e.preventDefault();
     if (e.target.className !== "grade"){
       this.setState({detailHidden: !(this.state.detailHidden)})
     }
+  },
+  componentWillUnmount: function () {
+    SubmissionStore.addGrade(this.props.id, this.state.grade);
   },
   render: function () {
     var submittedAt = new Date(this.props.submitted_at)
