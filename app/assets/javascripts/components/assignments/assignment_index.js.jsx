@@ -25,12 +25,10 @@ var AssignmentIndex = React.createClass({
     this.history.pushState(null, "/assignments/" + data.id);
   },
   getPage: function (pageNumber) {
-    event.preventDefault();
     ApiUtil.fetchAssignments(pageNumber);
     this.setState({activePage: pageNumber});
   },
   changePage: function (addon) {
-    event.preventDefault();
     var pageNumber = this._wrapPageNumber(addon);
     ApiUtil.fetchAssignments(pageNumber);
     this.setState({activePage: pageNumber});

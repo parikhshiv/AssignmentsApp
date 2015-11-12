@@ -26,14 +26,14 @@ var last_name_sort = function (a, b) {
 };
 ```
 
-### Client-side grading function added - kept as React state of student submission
+### Client-side grading function added - kept as React state of student submission using LinkedState mixin
 
 ```
-def show
-    @speech = Speech.includes({comments: [:user, :votes]},
-     :votes).find(params[:id])
-  render :show
-end
+SubmissionIndexItem = React.createClass({
+  mixins: [ReactRouter.History, React.addons.LinkedStateMixin],
+  getInitialState: function () {
+    return {detailHidden: true, grade: null}
+  }
 ```
 
 ## Minimum Viable Product

@@ -8,9 +8,7 @@ var AssignmentShow = React.createClass({
   componentWillReceiveProps: function (nextProps) {
     if (nextProps.params.assignmentID !== this.props.params.assignmentID) {
       ApiUtil.fetchSubmissions(nextProps.params.assignmentID);
-      var assignmentID = nextProps.params.assignmentID;
-      var assignment = this._setAssignment(assignmentID);
-      this.setState({ assignment: assignment});
+      this._updateAssignment(nextProps);
     }
   },
   componentWillMount: function () {
@@ -21,8 +19,9 @@ var AssignmentShow = React.createClass({
   componentWillUnmount: function () {
     AssignmentStore.removeChangeListener(this._updateAssignment);
   },
-  _updateAssignment: function () {
-    var assignmentID = this.props.params.assignmentID;
+  _updateAssignment: function (nextProps) {
+    var assignmentID = (nextProps) ? nextProps.params.assignmentID :
+    this.props.params.assignmentID;
     var assignment = this._setAssignment(assignmentID);
     this.setState({ assignment: assignment});
   },
@@ -45,11 +44,9 @@ var AssignmentShow = React.createClass({
     return res;
   },
   _setAssignment: function (assignmentID) {
-    if (assignmentID < 100) {
-      var assignment = this._findNewAssignmentById(assignmentID) || {}
-    } else {
-      var assignment = this._findAssignmentById(assignmentID) || {} ;
-    }
+    var assignment = (assignmentID < 1000) ?
+    this._findNewAssignmentById(assignmentID) || {} :
+    this._findAssignmentById(assignmentID) || {} ;
     return assignment;
   },
   assignmentClick: function (e) {
@@ -66,10 +63,10 @@ var AssignmentShow = React.createClass({
     var hidden = this.props.children ? " invisible" : "";
     var assignmentActive = this.props.children ? "" : "active";
     var submissionActive = this.props.children ? "active" : "";
+
     var date = new Date(this.state.assignment.due_at);
-    var dueAt;
     if (date.toString() !== "Invalid Date") {
-      dueAt = "due " + date.toDateString();
+      var dueAt = "due " + date.toDateString();
     }
     return (
       <div className="assignment-tabs">

@@ -1,11 +1,13 @@
 SubmissionIndexItem = React.createClass({
-  mixins: [ReactRouter.History],
+  mixins: [ReactRouter.History, React.addons.LinkedStateMixin],
   getInitialState: function () {
-    return {detailHidden: true}
+    return {detailHidden: true, grade: null}
   },
   onClick: function (e) {
     e.preventDefault();
-    this.setState({detailHidden: !(this.state.detailHidden)})
+    if (e.target.className !== "grade"){
+      this.setState({detailHidden: !(this.state.detailHidden)})
+    }
   },
   render: function () {
     var submittedAt = new Date(this.props.submitted_at)
@@ -14,12 +16,22 @@ SubmissionIndexItem = React.createClass({
       <li className="media" onClick={this.onClick}>
         <div className="media-left">
           <a href="#">
-            <img className="media-object" src={this.props.creator.avatars.large} alt="..."/>
+            <img className="media-object"
+            src={this.props.creator.avatars.large} alt="..."/>
           </a>
         </div>
         <div className="media-body">
-          <h4 className="media-heading">{this.props.creator.first_name} {this.props.creator.last_name}</h4>
-          <div className="pull-right turn-in">Turned in on {submittedAt.toDateString()}</div>
+          <h4 className="media-heading">
+            {this.props.creator.first_name} {this.props.creator.last_name}
+          </h4>
+          <div className="grade">
+            <h5>Grade:</h5>
+            <input className="grade"
+              valueLink={this.linkState('grade')}/>
+          </div>
+          <div className="pull-right turn-in">
+            Turned in on {submittedAt.toDateString()}
+          </div>
           <br/>
           <div className={"content" + hidden}>
             {this.props.content}
@@ -29,21 +41,3 @@ SubmissionIndexItem = React.createClass({
     )
   }
 })
-
-// <div className="container-fluid submission-index-item">
-//   <div className="media" onClick={this.onClick}>
-//     <div className="media-left">
-//       <a href="#">
-//         <img className="media-object" src={this.props.creator.avatars.large} alt=""/>
-//       </a>
-//     </div>
-//     <div className="media-body">
-//       <h4 className="media-heading">{this.props.creator.first_name} {this.props.creator.last_name}</h4>
-//       turned in on {submittedAt.toDateString()}
-//       <div className={hidden}>
-//         {this.props.content}
-//       </div>
-//     </div>
-//     <br/>
-//   </div>
-// </div>

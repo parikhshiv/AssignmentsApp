@@ -39,7 +39,6 @@ var Navbar = React.createClass({
             </div>
           </div>
         </nav>
-
     );
   }
 });
