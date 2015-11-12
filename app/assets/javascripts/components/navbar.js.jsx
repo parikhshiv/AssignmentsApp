@@ -22,7 +22,7 @@ var Navbar = React.createClass({
     this.setState({ showModal: true });
   },
   render: function () {
-    var hidden = this.state.showModal ? "" : " invisible"
+    var hidden = !(this.state.showModal);
     return (
         <nav className="navbar navbar-default">
           <div className="special-container container-fluid">
@@ -30,11 +30,12 @@ var Navbar = React.createClass({
               onClick={this.open}>
               New Assignment!
             </button>
-            <div className={"modal-container container" + hidden} onClick={this.close}>
-              <AssignmentForm close={this.close} createAssignment={this.props.createAssignment}/>
-            </div>
+            <AssignmentForm close={this.close} hidden={hidden}
+            createAssignment={this.props.createAssignment}/>
             <div className="navbar-header">
-              <a className="navbar-brand title" onClick={this.home}>assignments</a>
+              <a className="navbar-brand title" onClick={this.home}>
+                AssignmentsApp
+              </a>
             </div>
           </div>
         </nav>
@@ -42,10 +43,3 @@ var Navbar = React.createClass({
     );
   }
 });
-
-// <header>
-//   <h1 onClick={this.home} className="home-page">assignments</h1>
-// </header>
-// <button type="button" onClick = {this.open} className="btn btn-default navbar-btn pull-left">
-//   New Assignment!
-// </button>

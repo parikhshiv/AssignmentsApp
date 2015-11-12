@@ -1,6 +1,5 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "api/speeches.css";
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -16,6 +15,16 @@
  *= require_tree .
  *= require_self
  */
+
+ html {
+   height: 100%;
+ }
+
+ body {
+   margin: 0px;
+   height: 100%;
+   min-width: 920px;
+ }
 
  div.content {
   margin-top: 1%;
@@ -49,7 +58,6 @@
  li.media:hover{
    background-color:rgba(221, 221, 221, 0.34);
    cursor: pointer;
-  //  border: 1px solid black;
  }
 
  div.assignment-form {
@@ -61,7 +69,6 @@
     margin: 3% auto 3% auto;
     z-index: 9;
     max-height: 85%;
-    // position: fixed;
  }
 
  div.assignment-form > h3 {
@@ -73,8 +80,8 @@ div.modal-container {
   position: fixed;
     width: 100%;
     height: 100%;
-    // background: white;
-    // opacity: .5;
+    background: white;
+    background:rgba(255,255,255,0.8);
     z-index: 3;
 }
 
@@ -82,17 +89,12 @@ div.special-container {
   padding: 0px;
 }
 div.navbar-header {
-  //  font-size: 40px;
   float: right;
  }
 
  a.active {
    background-color: rgba(221, 221, 221, 0.34);
  }
-
-nav.navbar {
-  // background-color: #D8AADB;
-}
 
 small.right {
   float: right;
@@ -118,12 +120,16 @@ div.index {
   float: left;
   margin: 0px;
   margin-left: 1%;
+  border-right: 1px solid #CFCFCF;
+  padding-right: 2%;
+  height: 500px;
 }
 
 div.assignment {
   float: right;
   width: 58%;
   padding-right: 3%;
+  // min-width: 531px;
 }
 
 div.submissions-index {
@@ -156,151 +162,8 @@ div.media-left {
   width: 20%;
 }
 
-html {
-  height: 100%;
-}
-
-body {
-  // font-family: 'Fira Sans';
-  // color: white;
-  // background-color: black;
-  margin: 0px;
-  height: 100%;
-  min-width: 750px;
-}
-
-div.about-page {
-  width: 90%;
-  margin: auto;
-}
-
-div.song-index {
-  float: right;
-  width: 26%;
-}
-
-div.header-about-img {
-  width: 100%;
-  height: 100%;
-  float: left;
-  background-image: url('https://s-media-cache-ak0.pinimg.com/736x/6c/54/b2/6c54b20d163862f5ee52606b034069a6.jpg');
-  background-size: cover;
-  background-position: center center;
-  opacity: .2;
-  margin-bottom: 100px;
-  position: relative;
-  z-index: -1;
-}
-
-div.header-about {
-  float: left;
-  width: 68%;
-  height: 585px;
-  margin-top: 1%;
-  overflow: hidden;
-}
-
-div.header-about > h1 {
-  top: -12.4em;
-  position: relative;
-  right: -0.2em;
-  height: 0px;
-}
-
-div.header-about > p {
-  position: relative;
-  bottom: 17.3em;
-  left: 8em;
-  font-size: 20px;
-  width: 55%;
-  height: 0px;
-}
-
-a {
-  text-decoration: none;
-}
-
-header.header-2 {
-  width: 100%;
-  margin: auto;
-  height: 51px;
-  background-color: black;
-  text-align: center;
-}
-
-header {
-  background-color: #F5FF64;
-  color: black;
-}
-
-header.pull-right {
-  float: right;
-}
-
-header > h1 {
-  text-align: center;
-  margin: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  width: 18%;
-}
-
-header.auth > h1 {
-  text-align: center;
-  width: 50%;
-  margin: auto;
-}
-
-.about, .new-speech {
-  min-width: 10%;
-  display: inline-block;
-  text-align: center;
-  /*float: right;*/
-  color: cornflowerblue;
-  background-color: black;
-  padding: 13px;
-}
-
-.logout {
-  min-width: 10%;
-  display: inline-block;
-  text-align: center;
-  float: right;
-  color: cornflowerblue;
-  background-color: #F5FF64;
-  padding: 13px;
-  font-weight: bold;
-}
-
 .pull-left {
   float: left;
-}
-
-.about, .new-speech, .home-page, .logout {
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  transition: all .3s;
-}
-
-.about:hover, .new-speech:hover, .home-page:hover{
-  cursor: pointer;
-  color: #F5FF64;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  transition: all .3s;
-}
-
-.logout:hover {
-  cursor: pointer;
-  color: black;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  transition: all .3s;
-}
-
-h1.home-page:hover {
-  color: #565656;
-  text-shadow: black 1px -1px -1px;
 }
 
 h4.errors {
@@ -317,160 +180,10 @@ div.errors {
   font-style: normal;
 }
 
-div.edit-and-delete-buttons {
-  min-height: 30px;
-}
-
-div.text {
-  width: 500px;
-  overflow-y: auto;
-}
-
-#text {
-  white-space: pre-wrap;
-  line-height: 27px;
-  margin-bottom: 3%;
-}
-
-#text::selection {
-  background: #FF08FF;
-  color: black;
-}
-
-.hidden {
-  display: none;
-}
-
-textarea {
-  background-color: #424242;
-  font-size: 16px;
-  width: 97%;
-  padding: 1%;
-  border: 1px solid #A5A2A2;
-  color: #EAE9E9;
-  max-height: 270px
-}
-
-input {
-  width: inherit;
-  background-color: #424242;
-  border-radius: 5%;
-  border: 1px solid #C1C1C1;
-  color: #E4E4E4;
-  font-size: 13px;
-  -webkit-transition: all .1s;
-  -moz-transition: all .1s;
-  transition: all .1s;
-}
-
-input:hover {
-  cursor: pointer;
-  background-color: #A5A2A2;
-  -webkit-transition: all .1s;
-  -moz-transition: all .1s;
-  transition: all .1s;
-}
-
-input.cancel {
-  background-color: inherit;
-  border: none;
-  -webkit-transition: all .1s;
-  -moz-transition: all .1s;
-  transition: all .1s;
-}
-
-input.edit {
-  background-color: inherit;
-  border: none;
-  -webkit-transition: all .1s;
-  -moz-transition: all .1s;
-  transition: all .1s;
-}
-
-input.edit:hover {
-  color: green;
-  -webkit-transition: all .1s;
-  -moz-transition: all .1s;
-  transition: all .1s;
-}
-
 div.invisible {
   display: none;
 }
 
-input.cancel:hover {
-  color: #B91919;
-  -webkit-transition: all .1s;
-  -moz-transition: all .1s;
-  transition: all .1s;
-}
-
 img {
   width: 50%;
-}
-
-div.image-upload {
-  float: right;
-  width: 100%;
-  margin: 2% 1% 0% 0%;
-}
-
-div.image-upload > input {
-  font-size: 16px;
-  width: 45%;
-  float: right;
-  background-color: inherit;
-  border: none;
-  color: #A5A2A2;
-  -webkit-transition: all .1s;
-  -moz-transition: all .1s;
-  transition: all .1s;
-}
-
-div.image-upload > input:hover{
-  color: white;
-  -webkit-transition: all .1s;
-  -moz-transition: all .1s;
-  transition: all .1s;
-}
-
-div.image-upload > input.disabled {
-  background-color: black;
-  color: #16CE16;
-  font-weight: 200;
-  font-size: 16px;
-}
-
-div.image-upload > input.disabled:hover {
-  background-color: black;
-  cursor: default;
-}
-
-div.form-input {
-  float: left;
-  width: 50%;
-}
-
-div.form-input > input {
-  width: 95%;
-  min-height: 25px;
-}
-
-div.form-input > input:hover {
-  cursor: auto;
-  background-color: #424242;
-}
-
-div.about-page > h2 > a, div.about-page > p > a {
-  color: cornflowerblue;
-  -webkit-transition: all .1s;
-  -moz-transition: all .1s;
-  transition: all .1s;
-}
-
-div.about-page > h2 > a:hover, div.about-page > p > a:hover  {
-  color: #F5FF64;
-  -webkit-transition: all .1s;
-  -moz-transition: all .1s;
-  transition: all .1s;
 }

@@ -7,9 +7,9 @@
     _submissions = submissions.slice(0);
   };
 
-  var created_at_sort = function (a, b) {
-    var first = a.created_at;
-    var second = b.created_at;
+  var last_name_sort = function (a, b) {
+    var first = a.creator.last_name;
+    var second = b.creator.last_name;
     if (first < second) {
       return -1;
     } else if (first === second) {
@@ -21,7 +21,7 @@
 
   var SubmissionStore = root.SubmissionStore = $.extend({}, EventEmitter.prototype, {
     all: function () {
-      return _submissions.slice();
+      return _submissions.slice().sort(last_name_sort);
     },
     addChangeListener: function(callback){
       this.on(CHANGE_EVENT, callback);

@@ -6,14 +6,17 @@ var AssignmentShow = React.createClass({
     return { assignment: assignment}
   },
   componentWillReceiveProps: function (nextProps) {
-    ApiUtil.fetchSubmissions(nextProps.params.assignmentID);
-    var assignmentID = nextProps.params.assignmentID;
-    var assignment = this._setAssignment(assignmentID);
-    this.setState({ assignment: assignment});
+    if (nextProps.params.assignmentID !== this.props.params.assignmentID) {
+      ApiUtil.fetchSubmissions(nextProps.params.assignmentID);
+      var assignmentID = nextProps.params.assignmentID;
+      var assignment = this._setAssignment(assignmentID);
+      this.setState({ assignment: assignment});
+    }
   },
   componentWillMount: function () {
     AssignmentStore.addChangeListener(this._updateAssignment);
     ApiUtil.fetchAssignments();
+    ApiUtil.fetchSubmissions(this.props.params.assignmentID);
   },
   componentWillUnmount: function () {
     AssignmentStore.removeChangeListener(this._updateAssignment);
@@ -51,26 +54,34 @@ var AssignmentShow = React.createClass({
   },
   assignmentClick: function (e) {
     e.preventDefault();
-    this.history.pushState(null, "/assignments/" + this.props.params.assignmentID);
+    this.history.pushState(null, "/assignments/" +
+    this.props.params.assignmentID);
   },
   submissionClick: function (e) {
     e.preventDefault();
-    this.history.pushState(null, "/assignments/" + this.props.params.assignmentID + "/submissions");
+    this.history.pushState(null, "/assignments/" +
+    this.props.params.assignmentID + "/submissions");
   },
   render: function () {
-    var hidden = this.props.children ? " invisible" : ""
-    var assignmentActive = this.props.children ? "" : "active"
-    var submissionActive = this.props.children ? "active" : ""
-    var dueAt = new Date(this.state.assignment.due_at)
+    var hidden = this.props.children ? " invisible" : "";
+    var assignmentActive = this.props.children ? "" : "active";
+    var submissionActive = this.props.children ? "active" : "";
+    var date = new Date(this.state.assignment.due_at);
+    var dueAt;
+    if (date.toString() !== "Invalid Date") {
+      dueAt = "due " + date.toDateString();
+    }
     return (
       <div className="assignment-tabs">
         <ul className="nav nav-tabs">
-          <li onClick={this.assignmentClick} className={assignmentActive}><a href="#">Assignment</a></li>
-          <li onClick={this.submissionClick} className={submissionActive}><a href="#">Submissions</a></li>
+          <li onClick={this.assignmentClick} className={assignmentActive}>
+          <a href="#">Assignment</a></li>
+          <li onClick={this.submissionClick} className={submissionActive}>
+          <a href="#">Submissions</a></li>
         </ul>
         <div className={"page-header" + hidden}>
           <h1>{this.state.assignment.title}
-          <small className="right">due {dueAt.toDateString()}</small>
+          <small className="right">{dueAt}</small>
           <br/>
           <small>{this.state.assignment.description}</small>
           </h1>

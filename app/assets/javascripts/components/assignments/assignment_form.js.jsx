@@ -23,39 +23,42 @@ var AssignmentForm = React.createClass({
     return false;
   },
   reset: function (e) {
-    e.preventDefault();
-    this.setState({title: null, description: "", due_at: null, errors: false});
+    if (!e || e.target.className === "modal-container container" ||
+      e.target.className === "close pull-right") {
+      this.props.close()
+      this.setState({title: null, description: "", due_at: null, errors: false});
+    }
   },
   render: function () {
     var errors;
+    var hidden = this.props.hidden ? " invisible" : ""
     if (this.state.errors) {
       errors = "All fields must be completed.";
     }
     return (
-      <div className="assignment-form">
-        <div className="close pull-right" onClick={this.props.close}>X</div>
-        <h3>Add A New Assignment</h3>
-        <h4 className="errors">{errors}</h4>
-        <form onSubmit={this.handleSubmit}>
-          <div className = "form-input">
-            <label>Title:</label>
-            <br/>
-            <input type="text"
-            valueLink={this.linkState('title')}
-            placeholder="Enter title here"/>
-          </div>
-          <div className = "form-input">
-            <label>Due Date:</label>
-            <br/>
-            <input type="date"
-            valueLink={this.linkState('due_at')}/>
-          </div>
-          <label>Description:</label>
-          <textarea rows='20' cols='40' placeholder="Enter Description Here" valueLink={this.linkState('description')}/>
-          <br/>
-          <input type="Submit"/>
-          <input className="pull-right reset-form" onClick={this.reset} value="Reset Form" readOnly/>
-        </form>
+      <div className={"modal-container container" + hidden} onClick={this.reset}>
+        <div className="assignment-form">
+          <div className="close pull-right" onClick={this.reset}>X</div>
+          <h3>Add A New Assignment</h3>
+          <h4 className="errors">{errors}</h4>
+          <form onSubmit={this.handleSubmit}>
+            <div className="form-group">
+              <label>Title</label>
+              <input type="text" className="form-control"
+               valueLink={this.linkState('title')} placeholder="Title"/>
+            </div>
+            <div className="form-group">
+              <label>Date</label>
+              <input type="date" valueLink={this.linkState('due_at')}
+              className="form-control"/>
+            </div>
+            <label>Description</label>
+            <textarea className="form-control" rows="9"
+            placeholder="Enter Description Here"
+            valueLink={this.linkState('description')}></textarea>
+            <button type="submit" className="btn btn-default">Submit</button>
+          </form>
+        </div>
       </div>
     )
   }
