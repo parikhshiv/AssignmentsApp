@@ -56,7 +56,7 @@ var AssignmentForm = React.createClass({
             <textarea className="form-control" rows="9"
             placeholder="Enter Description Here"
             valueLink={this.linkState('description')}></textarea>
-            <button type="submit" className="btn btn-default">Submit</button>
+            <button type="submit" className="submit btn btn-default">Submit</button>
           </form>
         </div>
       </div>
