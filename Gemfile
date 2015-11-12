@@ -28,7 +28,6 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'better_errors'
 gem 'react-rails', '~> 1.3.0'
 gem 'flux-rails-assets'
-gem 'seed_dump'
 gem 'redis-rails'
 gem 'bootstrap-sass'
 
