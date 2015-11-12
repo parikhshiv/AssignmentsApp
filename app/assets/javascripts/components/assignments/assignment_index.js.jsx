@@ -8,20 +8,24 @@ var AssignmentIndex = React.createClass({
     ApiUtil.fetchAssignments(this.state.activePage);
   },
   _update: function () {
-    this.setState({assignments: AssignmentStore.all(),
-      active: parseInt(this.props.params.assignmentID)});
+    var assignments = (this.state.activePage === 1) ?
+    AssignmentStore.all().concat(AssignmentStore.allNew()) :
+    AssignmentStore.all();
+    
+    this.setState({assignments: assignments,
+      activeAssignment: parseInt(this.props.params.assignmentID)});
   },
   componentWillUnmount: function () {
     AssignmentStore.removeChangeListener(this._update);
   },
   Activate: function (id) {
-    this.setState({active: id})
+    this.setState({activeAssignment: id})
   },
   createAssignment: function (data) {
     var new_assignment = data;
     AssignmentStore.addNewAssignment(new_assignment)
     this.setState({assignments: this.state.assignments.concat(new_assignment),
-      active: data.id})
+      activeAssignment: data.id})
     this.history.pushState(null, "/assignments/" + data.id);
   },
   getPage: function (pageNumber) {
@@ -49,7 +53,7 @@ var AssignmentIndex = React.createClass({
             <div className="list-group">
               {this.state.assignments.map(function (assignment) {
                   return <AssignmentIndexItem key={assignment.id} {...assignment}
-                  Activate={this.Activate} active={this.state.active === assignment.id}/>;
+                  Activate={this.Activate} active={this.state.activeAssignment === assignment.id}/>;
                 }.bind(this))
               }
             </div>
